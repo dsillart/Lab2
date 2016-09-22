@@ -1,0 +1,24 @@
+package pokerBase;
+
+import java.util.ArrayList;
+import java.util.UUID;
+
+public static void main(String[] args) {
+
+public class Table {
+	
+	private UUID TableID;
+	private ArrayList<Player> players = new ArrayList<Player>();
+	
+	public Table()
+	{
+		TableID = UUID.randomUUID();
+	}
+	
+	public Table AddPlayerToTable(Player p)
+	{
+		players.add(p);
+		return this;
+	}	
+	}
+}
